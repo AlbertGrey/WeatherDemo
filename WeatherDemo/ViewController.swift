@@ -32,6 +32,7 @@ struct Main:Decodable{
 
 class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate {
     
+    @IBOutlet weak var photoImg: UIImageView!
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var weatherInfo: UILabel!
     @IBOutlet weak var maxTemp: UILabel!
@@ -117,6 +118,8 @@ class ViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photoImg.image = UIImage(named: "Rick")
         
     }
 
